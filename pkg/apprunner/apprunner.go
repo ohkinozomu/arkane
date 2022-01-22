@@ -5,6 +5,7 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/apprunner"
+	"github.com/ohkinozomu/arkane/pkg/knative"
 	api "knative.dev/serving/pkg/apis/serving/v1"
 )
 
@@ -30,6 +31,12 @@ func New(svc api.Service) (AppRunner, error) {
 	if err != nil {
 		return ar, err
 	}
+
+	err = knative.Validate(svc)
+	if err != nil {
+		return ar, err
+	}
+
 	ar.client = client
 	ar.Service = svc
 	return ar, nil

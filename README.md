@@ -16,7 +16,7 @@ $ go run main.go apply -f test/sample.yaml
 $ go run main.go delete -f test/sample.yaml
 ```
 
-# IAM
+# Required IAM policy
 
 ## Apply
 
@@ -34,10 +34,16 @@ apprunner:ListServices
 apprunner:DeleteService
 ```
 
-# Support API
+# Supported API
 
 only `serving.knative.dev/v1`
 
-# Status
+# Projecvt Status
 
 PoC
+
+# Difference between Knative API and App Runner
+
+App Runner doesn't support distributed traffic, so `traffic` field is ignored.
+https://github.com/aws/apprunner-roadmap/issues/40
+https://github.com/knative/specs/blob/main/specs/serving/knative-api-specification-1.0.md#spec

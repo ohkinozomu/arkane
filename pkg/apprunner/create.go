@@ -10,6 +10,7 @@ import (
 
 // https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html
 func (ar *AppRunner) CreateService() error {
+	printWarn()
 	fmt.Println("Creating service...")
 
 	service := ar.Service

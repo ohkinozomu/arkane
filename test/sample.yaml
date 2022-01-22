@@ -14,3 +14,5 @@ spec:
           ports:
             - name: http1
               containerPort: 80
+  traffic:
+  - percent: 100
