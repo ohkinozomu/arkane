@@ -9,6 +9,7 @@ import (
 
 // https://docs.aws.amazon.com/apprunner/latest/api/API_DeleteService.html
 func (ar *AppRunner) DeleteService() error {
+	printWarn()
 	fmt.Println("Deleting service...")
 
 	params := apprunner.DeleteServiceInput{

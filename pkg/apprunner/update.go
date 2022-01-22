@@ -9,6 +9,7 @@ import (
 
 // https://docs.aws.amazon.com/apprunner/latest/api/API_UpdateService.html
 func (ar *AppRunner) UpdateService() error {
+	printWarn()
 	fmt.Println("Updating service...")
 
 	sourceConfiguration := ar.newSourceConfiguration()
