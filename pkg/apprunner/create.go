@@ -12,7 +12,7 @@ import (
 func (ar *AppRunner) CreateService() error {
 	fmt.Println("Creating service...")
 
-	service := ar.svc
+	service := ar.Service
 
 	healthCheckConfiguration := types.HealthCheckConfiguration{}
 	instanceConfiguration := types.InstanceConfiguration{}
@@ -36,5 +36,6 @@ func (ar *AppRunner) CreateService() error {
 	if err != nil {
 		return err
 	}
+	fmt.Println("Created.")
 	return nil
 }
