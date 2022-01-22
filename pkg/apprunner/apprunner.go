@@ -9,9 +9,9 @@ import (
 )
 
 type AppRunner struct {
-	client *apprunner.Client
-	svc    api.Service
-	arn    string
+	client  *apprunner.Client
+	Service api.Service
+	arn     string
 }
 
 func newClient() (*apprunner.Client, error) {
@@ -31,6 +31,6 @@ func New(svc api.Service) (AppRunner, error) {
 		return ar, err
 	}
 	ar.client = client
-	ar.svc = svc
+	ar.Service = svc
 	return ar, nil
 }

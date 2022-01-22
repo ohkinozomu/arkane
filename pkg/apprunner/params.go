@@ -7,7 +7,7 @@ import (
 )
 
 func (ar *AppRunner) newSourceConfiguration() types.SourceConfiguration {
-	service := ar.svc
+	service := ar.Service
 	authenticationConfiguration := types.AuthenticationConfiguration{}
 
 	port := strconv.FormatInt(int64(service.Spec.Template.Spec.Containers[0].Ports[0].ContainerPort), 10)

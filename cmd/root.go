@@ -10,6 +10,8 @@ var (
 		Short: "arkane",
 		Long:  `arkane`,
 	}
+
+	fileName string
 )
 
 func Execute() error {

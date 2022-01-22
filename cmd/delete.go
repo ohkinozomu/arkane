@@ -10,14 +10,14 @@ import (
 )
 
 func init() {
-	rootCmd.AddCommand(applyCmd)
-	applyCmd.PersistentFlags().StringVarP(&fileName, "file", "f", "", "file name")
+	rootCmd.AddCommand(deleteCmd)
+	deleteCmd.PersistentFlags().StringVarP(&fileName, "file", "f", "", "file name")
 }
 
-var applyCmd = &cobra.Command{
-	Use:   "apply",
-	Short: "apply service",
-	Long:  `apply service`,
+var deleteCmd = &cobra.Command{
+	Use:   "delete",
+	Short: "delete service",
+	Long:  `delete service`,
 	Run: func(cmd *cobra.Command, args []string) {
 		if fileName == "" {
 			fmt.Println("Error: Input --file")
@@ -39,15 +39,12 @@ var applyCmd = &cobra.Command{
 			panic(err)
 		}
 		if serviceExists {
-			err = ar.UpdateService()
+			err = ar.DeleteService()
 			if err != nil {
 				panic(err)
 			}
 		} else {
-			err = ar.CreateService()
-			if err != nil {
-				panic(err)
-			}
+			fmt.Printf("%v doesn't exist.\n", ar.Service.ObjectMeta.Name)
 		}
 	},
 }
