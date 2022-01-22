@@ -34,11 +34,16 @@ apprunner:ListServices
 apprunner:DeleteService
 ```
 
+# Required Go version
+
+`^1.16.0`
+https://github.com/knative/serving/pull/12051
+
 # Supported API
 
 only `serving.knative.dev/v1`
 
-# Projecvt Status
+# Project Status
 
 PoC
 
