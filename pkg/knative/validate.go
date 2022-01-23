@@ -21,8 +21,14 @@ func Validate(svc api.Service) error {
 	}
 
 	if registry != wr.ECR_PUBLIC && registry != wr.ECR_PRIVATE {
-		msg := "App Runner only support ECR image: https://docs.aws.amazon.com/apprunner/latest/dg/service-source-image.html#service-source-image.providers"
+		msg := "[ERROR] App Runner only support ECR image: https://docs.aws.amazon.com/apprunner/latest/dg/service-source-image.html#service-source-image.providers"
 		return errors.New(msg)
 	}
+
+	if svc.APIVersion != "serving.knative.dev/v1" {
+		msg := "[ERROR] Unsupporetd API version"
+		return errors.New(msg)
+	}
+
 	return nil
 }
