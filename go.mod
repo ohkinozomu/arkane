@@ -9,6 +9,6 @@ require (
 	github.com/ohkinozomu/which-registry v0.0.1
 	github.com/spf13/cobra v1.3.0
 	golang.org/x/net v0.0.0-20211216030914-fe4d6282115f // indirect
-	k8s.io/api v0.21.4
-	knative.dev/serving v0.28.2
+	k8s.io/api v0.22.5
+	knative.dev/serving v0.29.0
 )
