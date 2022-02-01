@@ -22,16 +22,11 @@ $ go run main.go delete -f test/sample.yaml
 
 ```
 apprunner:CreateService
-apprunner:ListServices
 apprunner:UpdateService
-iam:CreateServiceLinkedRole
-```
-
-## Delete
-
-```
 apprunner:ListServices
 apprunner:DeleteService
+apprunner:DescribeService
+iam:CreateServiceLinkedRole
 ```
 
 # Required Go version
