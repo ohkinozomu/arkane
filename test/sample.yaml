@@ -1,7 +1,7 @@
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
-  name: helloworld-go
+  name: sample-nginx
 spec:
   template:
     spec:
@@ -9,7 +9,7 @@ spec:
         - image: public.ecr.aws/nginx/nginx:1.21
           env:
             - name: TARGET
-              value: "Go Sample v1"
+              value: "Nginx Sample"
           ports:
             - name: http1
               containerPort: 80
