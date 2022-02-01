@@ -18,8 +18,6 @@ $ go run main.go delete -f test/sample.yaml
 
 # Required IAM policy
 
-## Apply
-
 ```
 apprunner:CreateService
 apprunner:UpdateService
