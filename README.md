@@ -7,13 +7,13 @@ AWS App Runner with Knative API
 ## Apply
 
 ```
-$ go run main.go apply -f test/sample.yaml
+$ arkn apply -f test/sample.yaml
 ```
 
 ## Delete
 
 ```
-$ go run main.go delete -f test/sample.yaml
+$ arkn delete -f test/sample.yaml
 ```
 
 # Required IAM policy
