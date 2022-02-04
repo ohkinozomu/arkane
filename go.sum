@@ -700,6 +700,8 @@ github.com/json-iterator/go v1.1.10/go.mod h1:KdQUCv79m/52Kvf8AW2vK1V8akMuk1QjK/
 github.com/json-iterator/go v1.1.11/go.mod h1:KdQUCv79m/52Kvf8AW2vK1V8akMuk1QjK/uOdHXbAo4=
 github.com/json-iterator/go v1.1.12 h1:PV8peI4a0ysnczrg+LtxykD8LfKY9ML6u2jnxaEnrnM=
 github.com/json-iterator/go v1.1.12/go.mod h1:e30LSqwooZae/UwlEbR2852Gd8hjQvJoHmT4TnhNGBo=
+github.com/jsonmaur/aws-regions/v2 v2.3.1 h1:WWt452LyhjI4ZCRKBSULVHqIGE8/9UqVQOSAzuc2woE=
+github.com/jsonmaur/aws-regions/v2 v2.3.1/go.mod h1:NqtmZ2wG5HkrTYFQ+II3BDysj0yek59yjtZjAaCn8lE=
 github.com/jstemmer/go-junit-report v0.0.0-20190106144839-af01ea7f8024/go.mod h1:6v2b51hI/fHJwM22ozAgKL4VKDeJcHhJFhtBdhmNjmU=
 github.com/jstemmer/go-junit-report v0.9.1/go.mod h1:Brl9GWCQeLvo8nXZwPNNblvFj/XSXhF0NWZEnDohbsk=
 github.com/jtolds/gls v4.20.0+incompatible/go.mod h1:QJZ7F/aHp+rZTRtaJ1ow/lLfFfVYBRgL+9YlvaHOwJU=
@@ -805,6 +807,8 @@ github.com/nxadm/tail v1.4.4/go.mod h1:kenIhsEOeOJmVchQTgglprH7qJGnHDVpk1VPCcaMI
 github.com/nxadm/tail v1.4.8/go.mod h1:+ncqLTQzXmGhMZNUePPaPqPvBxHAIsmXswZKocGu+AU=
 github.com/ohkinozomu/which-registry v0.0.1 h1:bEKanP2NKk+Rl5I4pF3E8F65p9PtY5QXf5XTIPIfqz0=
 github.com/ohkinozomu/which-registry v0.0.1/go.mod h1:vJoxtybLrr1ePxZOezloNZgzjWkBHzOcTYfdyCGM7Jo=
+github.com/ohkinozomu/which-registry v0.1.1 h1:S4EWVM7wl6YHdKNv8xWPLSXDie6J2nb27asxOo7lZbo=
+github.com/ohkinozomu/which-registry v0.1.1/go.mod h1:qmLsrQyAAxXg9rqGl5Z6Z7t9VmMlzycbNKcNOPKX8yY=
 github.com/oklog/ulid v1.3.1/go.mod h1:CirwcVhetQ6Lv90oh/F+FBtV6XMibvdAFo93nm5qn4U=
 github.com/olekukonko/tablewriter v0.0.0-20170122224234-a0225b3f23b5/go.mod h1:vsDQFd/mU46D+Z4whnwzcISnGGzXWMclvtLoiIKAKIo=
 github.com/onsi/ginkgo v0.0.0-20151202141238-7f8ab55aaf3b/go.mod h1:lLunBs/Ym6LB5Z9jYTR76FiuTmxDTDusOGeTQH+WWjE=
