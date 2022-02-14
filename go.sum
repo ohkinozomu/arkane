@@ -1746,6 +1746,8 @@ knative.dev/pkg v0.0.0-20220118160532-77555ea48cd4 h1:b9aXVrcfM/ajjHE/lGvlJOHZNA
 knative.dev/pkg v0.0.0-20220118160532-77555ea48cd4/go.mod h1:etVT7Tm8pSDf4RKhGk4r7j/hj3dNBpvT7bO6a6wpahs=
 knative.dev/serving v0.29.0 h1:J33ndKtgRH4QcBE2XLkmXnm8oah9rKaCRGwD2SFIdPY=
 knative.dev/serving v0.29.0/go.mod h1:8Ay9QjyTcqoJE+2PietSmT5/VMdSQHe5aIBhsAFOCjM=
+knative.dev/serving v0.29.1 h1:v6zYR/mSvVt/BpiX1AvSkDzm3uUWYqYSIoLj5pE70Xo=
+knative.dev/serving v0.29.1/go.mod h1:8Ay9QjyTcqoJE+2PietSmT5/VMdSQHe5aIBhsAFOCjM=
 pgregory.net/rapid v0.3.3/go.mod h1:UYpPVyjFHzYBGHIxLFoupi8vwk6rXNzRY9OMvVxFIOU=
 rsc.io/binaryregexp v0.2.0/go.mod h1:qTv7/COck+e2FymRvadv62gMdZztPaShugOCi3I+8D8=
 rsc.io/quote/v3 v3.1.0/go.mod h1:yEA65RcK8LyAZtP9Kv3t0HmxON59tX3rD+tICJqUlj0=
