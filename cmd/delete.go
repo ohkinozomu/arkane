@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"fmt"
-	"os"
+	"errors"
+	"log"
 
 	"github.com/ohkinozomu/arkane/pkg/apprunner"
 	"github.com/ohkinozomu/arkane/pkg/knative"
@@ -11,40 +11,44 @@ import (
 
 func init() {
 	rootCmd.AddCommand(deleteCmd)
-	deleteCmd.PersistentFlags().StringVarP(&fileName, "file", "f", "", "file name")
+	deleteCmd.Flags().StringVarP(&fileName, "file", "f", "", "file name")
 }
 
 var deleteCmd = &cobra.Command{
 	Use:   "delete",
 	Short: "delete service",
 	Long:  `delete service`,
-	Run: func(cmd *cobra.Command, args []string) {
+	RunE: func(cmd *cobra.Command, args []string) error {
 		if fileName == "" {
-			fmt.Println("Error: Input --file")
-			os.Exit(1)
+			return errors.New("error: Input --file")
 		}
 
 		svc, err := knative.Parse(fileName)
 		if err != nil {
-			panic(err)
+			return err
 		}
 
+		err = knative.Validate(svc)
+		if err != nil {
+			return err
+		}
 		ar, err := apprunner.New(svc)
 		if err != nil {
-			panic(err)
+			return err
 		}
 
 		serviceExists, err := ar.ServiceExists()
 		if err != nil {
-			panic(err)
+			return err
 		}
 		if serviceExists {
 			err = ar.DeleteService()
 			if err != nil {
-				panic(err)
+				return err
 			}
 		} else {
-			fmt.Printf("%v doesn't exist.\n", ar.Service.ObjectMeta.Name)
+			log.Printf("%v doesn't exist.\n", ar.Service.ObjectMeta.Name)
 		}
+		return nil
 	},
 }
