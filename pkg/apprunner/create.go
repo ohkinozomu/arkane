@@ -41,8 +41,6 @@ func (ar *AppRunner) waitForCreated() {
 
 // https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html
 func (ar *AppRunner) CreateService() error {
-	printWarn()
-
 	service := ar.Service
 
 	healthCheckConfiguration := types.HealthCheckConfiguration{}

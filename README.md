@@ -51,4 +51,4 @@ https://github.com/aws/apprunner-roadmap/issues/40
 - App Runner doesn't support side-cars (AKA multiple containers).
 https://github.com/aws/apprunner-roadmap/issues/71
 
-- `namespace` field is ignored.
+- `namespace`, `volumes`, `timeoutSeconds` field is ignored.
