@@ -1,0 +1,17 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: multiple-containers
+spec:
+  template:
+    spec:
+      containers:
+        - image: public.ecr.aws/nginx/nginx:1.21
+          name: nginx
+          ports:
+            - name: http1
+              containerPort: 80
+        - image: 111111111111.dkr.ecr.us-east-1.amazonaws.com/app:latest
+          name: app
+  traffic:
+  - percent: 100

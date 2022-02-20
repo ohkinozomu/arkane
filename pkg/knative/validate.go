@@ -30,5 +30,10 @@ func Validate(svc api.Service) error {
 		return errors.New(msg)
 	}
 
+	if len(svc.Spec.Template.Spec.Containers) >= 2 {
+		msg := "[ERROR] App Runner doesn't support multiple containers: https://github.com/aws/apprunner-roadmap/issues/71"
+		return errors.New(msg)
+	}
+
 	return nil
 }
