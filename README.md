@@ -43,8 +43,12 @@ PoC
 
 # Difference between Knative API and App Runner
 
+https://github.com/knative/specs/blob/main/specs/serving/knative-api-specification-1.0.md#spec
+
 - App Runner doesn't support distributed traffic, so `traffic` field is ignored.
 https://github.com/aws/apprunner-roadmap/issues/40
-https://github.com/knative/specs/blob/main/specs/serving/knative-api-specification-1.0.md#spec
+
+- App Runner doesn't support side-cars (AKA multiple containers).
+https://github.com/aws/apprunner-roadmap/issues/71
 
 - `namespace` field is ignored.
