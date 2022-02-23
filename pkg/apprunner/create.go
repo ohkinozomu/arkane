@@ -45,8 +45,10 @@ func (ar *AppRunner) CreateService() error {
 
 	healthCheckConfiguration := types.HealthCheckConfiguration{}
 
-	instanceConfiguration := types.InstanceConfiguration{
-		InstanceRoleArn: &service.Spec.Template.Spec.ServiceAccountName,
+	var instanceConfiguration types.InstanceConfiguration
+	serviceAccountName := service.Spec.Template.Spec.ServiceAccountName
+	if serviceAccountName != "" {
+		instanceConfiguration.InstanceRoleArn = &service.Spec.Template.Spec.ServiceAccountName
 	}
 
 	sourceConfiguration := ar.newSourceConfiguration()
