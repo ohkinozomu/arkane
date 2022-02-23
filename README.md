@@ -51,4 +51,4 @@ https://github.com/aws/apprunner-roadmap/issues/40
 - App Runner doesn't support side-cars (AKA multiple containers).
 https://github.com/aws/apprunner-roadmap/issues/71
 
-- `namespace`, `volumes`, `timeoutSeconds`, `containerConcurrency` field is ignored.
+- `namespace`, `volumes`, `timeoutSeconds`, `containerConcurrency`, `imagePullSecrets` field is ignored.
