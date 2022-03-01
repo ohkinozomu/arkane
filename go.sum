@@ -176,6 +176,8 @@ github.com/aws/aws-sdk-go-v2/internal/ini v1.3.6 h1:c8s9EhIPVFMFS+R1+rtEghGrf7v8
 github.com/aws/aws-sdk-go-v2/internal/ini v1.3.6/go.mod h1:o1ippSg3yJx5EuT4AOGXJCUcmt5vrcxla1cg6K1Q8Iw=
 github.com/aws/aws-sdk-go-v2/service/apprunner v1.9.0 h1:DI572BqdYkP9+z53VEohpGnZl59WTzje2etjHF5gsBs=
 github.com/aws/aws-sdk-go-v2/service/apprunner v1.9.0/go.mod h1:6V3qyvlFVFGsI/HOEzZGCltYZFf3Vxe/nuZpd3HLLE4=
+github.com/aws/aws-sdk-go-v2/service/apprunner v1.10.0 h1:d8+QtBtumaFufQyUaxMOG+VcAoQXhoxvvD/2NgnDzR0=
+github.com/aws/aws-sdk-go-v2/service/apprunner v1.10.0/go.mod h1:FAUUbymbuQdblHoyLoHjDgt0JrpltuwfNYB4FPXkaJc=
 github.com/aws/aws-sdk-go-v2/service/ecr v1.4.1/go.mod h1:FglZcyeiBqcbvyinl+n14aT/EWC7S1MIH+Gan2iizt0=
 github.com/aws/aws-sdk-go-v2/service/ecr v1.13.0/go.mod h1:X9rkClmo0/dXh2fwvhkMoXR5zxirrzCqMgfU+Z0HIgs=
 github.com/aws/aws-sdk-go-v2/service/ecrpublic v1.4.1/go.mod h1:eD5Eo4drVP2FLTw0G+SMIPWNWvQRGGTtIZR2XeAagoA=
