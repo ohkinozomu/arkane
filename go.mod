@@ -10,5 +10,5 @@ require (
 	github.com/ohkinozomu/which-registry v0.1.2
 	github.com/spf13/cobra v1.3.0
 	k8s.io/api v0.22.5
-	knative.dev/serving v0.29.3
+	knative.dev/serving v0.30.0
 )
