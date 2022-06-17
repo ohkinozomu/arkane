@@ -9,6 +9,6 @@ require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/ohkinozomu/which-registry v0.1.2
 	github.com/spf13/cobra v1.4.0
-	k8s.io/api v0.24.0
+	k8s.io/api v0.24.2
 	knative.dev/serving v0.31.0
 )
